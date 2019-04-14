@@ -1,5 +1,10 @@
-this project contain coder with
-all clojure development  system
+# one command use clojure in any env
+
+### ;TLDR
+
+```bash
+docker run -it -p 8443:8443 -v "${PWD}:/home/coder/project" vehas/coder-clojure --no-auth  --allow-http
+```
 
 #  component
 1. java
@@ -17,7 +22,9 @@ all clojure development  system
 ### go to your project directory
 - if you don't have clojure code before then you can use any directory
 ### run
+```bash
 docker run -it -p 8443:8443 -v "${PWD}:/home/coder/project" vehas/coder-clojure --no-auth  --allow-http
+```
 
 ### and go to  http://localhast:8443
 - you will see  codercom start, It's look as same as vs code in browser and it's also include  calva and parinfer
